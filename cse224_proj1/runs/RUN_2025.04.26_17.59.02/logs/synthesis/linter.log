@@ -1,0 +1,10 @@
+%Warning-ASCRANGE: /openlane/designs/cse224_proj1/src/main.v:2:11: Ascending bit range vector: left < right of bit range: [0:7]
+                                                                 : ... note: In instance 'main'
+    2 |     input [0:7] in;
+      |           ^
+                   ... For warning description see https://verilator.org/warn/ASCRANGE?v=5.018
+                   ... Use "/* verilator lint_off ASCRANGE */" and lint_on around source to disable this message.
+%Warning-ASCRANGE: /openlane/designs/cse224_proj1/src/main.v:3:12: Ascending bit range vector: left < right of bit range: [0:7]
+                                                                 : ... note: In instance 'main'
+    3 |     output [0:7] out;
+      |            ^
