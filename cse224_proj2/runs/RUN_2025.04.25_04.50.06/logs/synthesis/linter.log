@@ -1,0 +1,6 @@
+%Warning-WIDTHEXPAND: /openlane/designs/cse224_proj2/src/main.v:14:25: Operator ASSIGN expects 8 bits on the Assign RHS, but Assign RHS's CONST '3'h0' generates 3 bits.
+                                                                     : ... note: In instance 'main'
+   14 |             3'b111: out = 3'b000;
+      |                         ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.018
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
