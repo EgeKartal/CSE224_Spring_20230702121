@@ -1,0 +1,1 @@
+lvs {/openlane/designs/sys/runs/RUN_2025.05.24_14.37.30/results/signoff/sys.spice sys} {/openlane/designs/sys/runs/RUN_2025.05.24_14.37.30/tmp/signoff/35-sys.pnl.v sys} /root/.volare/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/sys/runs/RUN_2025.05.24_14.37.30/logs/signoff/38-sys.lef.lvs.log -json

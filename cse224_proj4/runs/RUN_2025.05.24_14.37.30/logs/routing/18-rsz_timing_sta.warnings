@@ -1,0 +1,6 @@
+[WARNING GRT-0026] Missing route to pin _05141_/B.
+[WARNING GRT-0026] Missing route to pin _05141_/Y.
+[WARNING GRT-0026] Missing route to pin _05451_/X.
+Warning: There are 50 input ports missing set_input_delay.
+Warning: There are 32 unconstrained endpoints.
+[WARNING] Did not save OpenROAD database!

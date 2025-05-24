@@ -1,0 +1,218 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: _10956_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _10976_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ _10956_/CLK (sky130_fd_sc_hd__dfxtp_2)
+     4    0.02    0.05    0.32    0.32 v _10956_/Q (sky130_fd_sc_hd__dfxtp_2)
+                                         alu.b[13] (net)
+                  0.05    0.00    0.32 v _05132_/A (sky130_fd_sc_hd__or3_2)
+     3    0.01    0.10    0.52    0.84 v _05132_/X (sky130_fd_sc_hd__or3_2)
+                                         _01129_ (net)
+                  0.10    0.00    0.84 v _05134_/C (sky130_fd_sc_hd__or4_2)
+     4    0.01    0.14    0.69    1.52 v _05134_/X (sky130_fd_sc_hd__or4_2)
+                                         _01131_ (net)
+                  0.14    0.00    1.52 v _05141_/A (sky130_fd_sc_hd__nor4_2)
+     6    0.04    0.94    0.86    2.38 ^ _05141_/Y (sky130_fd_sc_hd__nor4_2)
+                                         _01138_ (net)
+                  0.94    0.00    2.38 ^ _05169_/A (sky130_fd_sc_hd__buf_1)
+    10    0.06    0.66    0.58    2.97 ^ _05169_/X (sky130_fd_sc_hd__buf_1)
+                                         _01166_ (net)
+                  0.66    0.00    2.97 ^ _05170_/A (sky130_fd_sc_hd__buf_1)
+    10    0.06    0.69    0.60    3.56 ^ _05170_/X (sky130_fd_sc_hd__buf_1)
+                                         _01167_ (net)
+                  0.69    0.01    3.57 ^ _05234_/B (sky130_fd_sc_hd__nand2_2)
+     4    0.01    0.12    0.13    3.70 v _05234_/Y (sky130_fd_sc_hd__nand2_2)
+                                         _01231_ (net)
+                  0.12    0.00    3.70 v _05257_/C (sky130_fd_sc_hd__or3_2)
+     1    0.00    0.08    0.44    4.14 v _05257_/X (sky130_fd_sc_hd__or3_2)
+                                         _01253_ (net)
+                  0.08    0.00    4.14 v _05258_/B1 (sky130_fd_sc_hd__o21ai_2)
+     2    0.01    0.16    0.09    4.23 ^ _05258_/Y (sky130_fd_sc_hd__o21ai_2)
+                                         _01254_ (net)
+                  0.16    0.00    4.23 ^ _05264_/A2 (sky130_fd_sc_hd__a21o_2)
+     1    0.01    0.05    0.16    4.38 ^ _05264_/X (sky130_fd_sc_hd__a21o_2)
+                                         _01260_ (net)
+                  0.05    0.00    4.38 ^ _05265_/A (sky130_fd_sc_hd__inv_2)
+     3    0.01    0.03    0.04    4.43 v _05265_/Y (sky130_fd_sc_hd__inv_2)
+                                         _01261_ (net)
+                  0.03    0.00    4.43 v _05267_/A1 (sky130_fd_sc_hd__mux2_2)
+     2    0.01    0.06    0.27    4.70 v _05267_/X (sky130_fd_sc_hd__mux2_2)
+                                         _01263_ (net)
+                  0.06    0.00    4.70 v _05268_/B (sky130_fd_sc_hd__or4bb_2)
+     1    0.00    0.09    0.59    5.28 v _05268_/X (sky130_fd_sc_hd__or4bb_2)
+                                         _01264_ (net)
+                  0.09    0.00    5.28 v _05308_/A1_N (sky130_fd_sc_hd__o2bb2a_2)
+     1    0.00    0.05    0.26    5.54 ^ _05308_/X (sky130_fd_sc_hd__o2bb2a_2)
+                                         _01099_ (net)
+                  0.05    0.00    5.54 ^ _10976_/D (sky130_fd_sc_hd__dfxtp_2)
+                                  5.54   data arrival time
+
+                  0.00   10.00   10.00   clock core_clock (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                          0.00   10.00   clock reconvergence pessimism
+                                 10.00 ^ _10976_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                         -0.07    9.93   library setup time
+                                  9.93   data required time
+-----------------------------------------------------------------------------
+                                  9.93   data required time
+                                 -5.54   data arrival time
+-----------------------------------------------------------------------------
+                                  4.39   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+_08743_/S0                              1.50    1.77   -0.27 (VIOLATED)
+_08805_/S0                              1.50    1.77   -0.27 (VIOLATED)
+_09025_/S0                              1.50    1.77   -0.27 (VIOLATED)
+_08963_/S0                              1.50    1.77   -0.27 (VIOLATED)
+_08908_/A                               1.50    1.77   -0.27 (VIOLATED)
+_09363_/S0                              1.50    1.77   -0.27 (VIOLATED)
+_09419_/S0                              1.50    1.77   -0.27 (VIOLATED)
+_09307_/S0                              1.50    1.77   -0.27 (VIOLATED)
+_08700_/S0                              1.50    1.77   -0.27 (VIOLATED)
+_08761_/S0                              1.50    1.77   -0.27 (VIOLATED)
+_08699_/X                               1.51    1.76   -0.26 (VIOLATED)
+_07792_/A1                              1.50    1.50   -0.00 (VIOLATED)
+_07655_/A1                              1.50    1.50   -0.00 (VIOLATED)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+_08699_/X                               0.13    0.15   -0.02 (VIOLATED)
+_07494_/X                               0.13    0.13   -0.00 (VIOLATED)
+
+
+max slew violations count Typical: 13
+max fanout violations count Typical: 0
+max cap violations count Typical: 2
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 1 unannotated drivers.
+ clock
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 13
+max fanout violation count 0
+max cap violation count 2
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 50 input ports missing set_input_delay.
+  address1[0]
+  address1[1]
+  address1[2]
+  address1[3]
+  address1[4]
+  address2[0]
+  address2[1]
+  address2[2]
+  address2[3]
+  address2[4]
+  address3[0]
+  address3[1]
+  address3[2]
+  address3[3]
+  address3[4]
+  inpmain[0]
+  inpmain[10]
+  inpmain[11]
+  inpmain[12]
+  inpmain[13]
+  inpmain[14]
+  inpmain[15]
+  inpmain[16]
+  inpmain[17]
+  inpmain[18]
+  inpmain[19]
+  inpmain[1]
+  inpmain[20]
+  inpmain[21]
+  inpmain[22]
+  inpmain[23]
+  inpmain[24]
+  inpmain[25]
+  inpmain[26]
+  inpmain[27]
+  inpmain[28]
+  inpmain[29]
+  inpmain[2]
+  inpmain[30]
+  inpmain[31]
+  inpmain[3]
+  inpmain[4]
+  inpmain[5]
+  inpmain[6]
+  inpmain[7]
+  inpmain[8]
+  inpmain[9]
+  opcode[0]
+  opcode[1]
+  wenable
+Warning: There are 32 unconstrained endpoints.
+  result[0]
+  result[10]
+  result[11]
+  result[12]
+  result[13]
+  result[14]
+  result[15]
+  result[16]
+  result[17]
+  result[18]
+  result[19]
+  result[1]
+  result[20]
+  result[21]
+  result[22]
+  result[23]
+  result[24]
+  result[25]
+  result[26]
+  result[27]
+  result[28]
+  result[29]
+  result[2]
+  result[30]
+  result[31]
+  result[3]
+  result[4]
+  result[5]
+  result[6]
+  result[7]
+  result[8]
+  result[9]

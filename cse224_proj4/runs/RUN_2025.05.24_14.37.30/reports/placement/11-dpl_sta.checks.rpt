@@ -1,0 +1,202 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: _10943_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _11006_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ _10943_/CLK (sky130_fd_sc_hd__dfxtp_2)
+    10    0.03    0.08    0.34    0.34 v _10943_/Q (sky130_fd_sc_hd__dfxtp_2)
+                                         alu.b[0] (net)
+                  0.08    0.00    0.34 v _05144_/A (sky130_fd_sc_hd__or4_1)
+     1    0.00    0.08    0.51    0.85 v _05144_/X (sky130_fd_sc_hd__or4_1)
+                                         _01141_ (net)
+                  0.08    0.00    0.85 v _05145_/A (sky130_fd_sc_hd__clkbuf_4)
+    10    0.04    0.09    0.20    1.05 v _05145_/X (sky130_fd_sc_hd__clkbuf_4)
+                                         _01142_ (net)
+                  0.09    0.00    1.06 v _05519_/B (sky130_fd_sc_hd__or3_4)
+     8    0.03    0.10    0.43    1.49 v _05519_/X (sky130_fd_sc_hd__or3_4)
+                                         _01504_ (net)
+                  0.10    0.00    1.49 v _05599_/C (sky130_fd_sc_hd__or3_2)
+     4    0.01    0.10    0.47    1.96 v _05599_/X (sky130_fd_sc_hd__or3_2)
+                                         _01580_ (net)
+                  0.10    0.00    1.96 v _05609_/A2 (sky130_fd_sc_hd__o21a_1)
+     1    0.00    0.04    0.20    2.15 v _05609_/X (sky130_fd_sc_hd__o21a_1)
+                                         _01589_ (net)
+                  0.04    0.00    2.15 v _05610_/B (sky130_fd_sc_hd__xnor2_1)
+     2    0.01    0.18    0.18    2.33 ^ _05610_/Y (sky130_fd_sc_hd__xnor2_1)
+                                         _01590_ (net)
+                  0.18    0.00    2.33 ^ _05611_/B (sky130_fd_sc_hd__nor2_1)
+     2    0.00    0.05    0.07    2.40 v _05611_/Y (sky130_fd_sc_hd__nor2_1)
+                                         _01591_ (net)
+                  0.05    0.00    2.40 v _05613_/A (sky130_fd_sc_hd__or2b_1)
+     4    0.01    0.07    0.25    2.65 v _05613_/X (sky130_fd_sc_hd__or2b_1)
+                                         _01593_ (net)
+                  0.07    0.00    2.65 v _05660_/B (sky130_fd_sc_hd__or4_1)
+     2    0.01    0.10    0.53    3.18 v _05660_/X (sky130_fd_sc_hd__or4_1)
+                                         _01637_ (net)
+                  0.10    0.00    3.18 v _05722_/B1 (sky130_fd_sc_hd__a211o_1)
+     2    0.01    0.07    0.32    3.50 v _05722_/X (sky130_fd_sc_hd__a211o_1)
+                                         _01695_ (net)
+                  0.07    0.00    3.50 v _05771_/A1 (sky130_fd_sc_hd__a31o_1)
+     2    0.01    0.05    0.20    3.70 v _05771_/X (sky130_fd_sc_hd__a31o_1)
+                                         _01740_ (net)
+                  0.05    0.00    3.70 v _05781_/A1 (sky130_fd_sc_hd__a31o_1)
+     3    0.01    0.06    0.20    3.90 v _05781_/X (sky130_fd_sc_hd__a31o_1)
+                                         _01750_ (net)
+                  0.06    0.00    3.90 v _05809_/A2 (sky130_fd_sc_hd__a31o_1)
+     2    0.01    0.06    0.24    4.14 v _05809_/X (sky130_fd_sc_hd__a31o_1)
+                                         _01776_ (net)
+                  0.06    0.00    4.14 v _05818_/B2 (sky130_fd_sc_hd__o2bb2ai_1)
+     1    0.01    0.16    0.17    4.30 ^ _05818_/Y (sky130_fd_sc_hd__o2bb2ai_1)
+                                         _01784_ (net)
+                  0.16    0.00    4.30 ^ _05822_/A (sky130_fd_sc_hd__xnor2_1)
+     1    0.00    0.05    0.09    4.39 v _05822_/Y (sky130_fd_sc_hd__xnor2_1)
+                                         _01788_ (net)
+                  0.05    0.00    4.39 v _05829_/A2 (sky130_fd_sc_hd__a21o_1)
+     1    0.00    0.03    0.17    4.56 v _05829_/X (sky130_fd_sc_hd__a21o_1)
+                                         _01112_ (net)
+                  0.03    0.00    4.56 v _11006_/D (sky130_fd_sc_hd__dfxtp_4)
+                                  4.56   data arrival time
+
+                  0.00   10.00   10.00   clock core_clock (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                          0.00   10.00   clock reconvergence pessimism
+                                 10.00 ^ _11006_/CLK (sky130_fd_sc_hd__dfxtp_4)
+                         -0.12    9.88   library setup time
+                                  9.88   data required time
+-----------------------------------------------------------------------------
+                                  9.88   data required time
+                                 -4.56   data arrival time
+-----------------------------------------------------------------------------
+                                  5.32   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+
+max slew violations count Typical: 0
+max fanout violations count Typical: 0
+max cap violations count Typical: 0
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 1 unannotated drivers.
+ clock
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 50 input ports missing set_input_delay.
+  address1[0]
+  address1[1]
+  address1[2]
+  address1[3]
+  address1[4]
+  address2[0]
+  address2[1]
+  address2[2]
+  address2[3]
+  address2[4]
+  address3[0]
+  address3[1]
+  address3[2]
+  address3[3]
+  address3[4]
+  inpmain[0]
+  inpmain[10]
+  inpmain[11]
+  inpmain[12]
+  inpmain[13]
+  inpmain[14]
+  inpmain[15]
+  inpmain[16]
+  inpmain[17]
+  inpmain[18]
+  inpmain[19]
+  inpmain[1]
+  inpmain[20]
+  inpmain[21]
+  inpmain[22]
+  inpmain[23]
+  inpmain[24]
+  inpmain[25]
+  inpmain[26]
+  inpmain[27]
+  inpmain[28]
+  inpmain[29]
+  inpmain[2]
+  inpmain[30]
+  inpmain[31]
+  inpmain[3]
+  inpmain[4]
+  inpmain[5]
+  inpmain[6]
+  inpmain[7]
+  inpmain[8]
+  inpmain[9]
+  opcode[0]
+  opcode[1]
+  wenable
+Warning: There are 32 unconstrained endpoints.
+  result[0]
+  result[10]
+  result[11]
+  result[12]
+  result[13]
+  result[14]
+  result[15]
+  result[16]
+  result[17]
+  result[18]
+  result[19]
+  result[1]
+  result[20]
+  result[21]
+  result[22]
+  result[23]
+  result[24]
+  result[25]
+  result[26]
+  result[27]
+  result[28]
+  result[29]
+  result[2]
+  result[30]
+  result[31]
+  result[3]
+  result[4]
+  result[5]
+  result[6]
+  result[7]
+  result[8]
+  result[9]
