@@ -1,0 +1,18 @@
+digraph "ztfc" {
+label="ztfc";
+rankdir="LR";
+remincross=true;
+n1 [ shape=diamond, label="count", color="black", fontcolor="black" ];
+n2 [ shape=octagon, label="an0", color="black", fontcolor="black" ];
+n3 [ shape=octagon, label="seg_out", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="rst", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="clk", color="black", fontcolor="black" ];
+c8 [ shape=record, label="{{<p6> in}|b\nss|{<p2> an0|<p7> out}}",  ];
+c9 [ shape=record, label="{{<p5> clk|<p4> rst}|a\nztfc_util|{<p1> count}}",  ];
+c9:p1:e -> n1:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n1:e -> c8:p6:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+c8:p2:e -> n2:w [color="black", fontcolor="black", label=""];
+c8:p7:e -> n3:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n4:e -> c9:p4:w [color="black", fontcolor="black", label=""];
+n5:e -> c9:p5:w [color="black", fontcolor="black", label=""];
+}

@@ -1,0 +1,19 @@
+Design Name: ztfc
+Run Directory: /openlane/designs/ZeroToFive/runs/RUN_2025.05.24_11.53.31
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/ZeroToFive/runs/RUN_2025.05.24_11.53.31/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/ZeroToFive/runs/RUN_2025.05.24_11.53.31/logs/signoff/37-ztfc.lef.lvs.log
+Number of nets: 182                        |Number of nets: 182                        
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/ZeroToFive/runs/RUN_2025.05.24_11.53.31/logs/signoff/40-arc.log
+Pin violations: 5
+Net violations: 5

@@ -1,0 +1,1 @@
+lvs {/openlane/designs/ZeroToFive/runs/RUN_2025.05.24_11.53.31/results/signoff/ztfc.spice ztfc} {/openlane/designs/ZeroToFive/runs/RUN_2025.05.24_11.53.31/tmp/signoff/34-ztfc.pnl.v ztfc} /root/.volare/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/ZeroToFive/runs/RUN_2025.05.24_11.53.31/logs/signoff/37-ztfc.lef.lvs.log -json

@@ -1,0 +1,5 @@
+Partial/Required:  1.53, Required:    400.0, Partial:   613.54, Net: _051_, Pin: _179_/A, Layer: met3
+Partial/Required:  1.53, Required:    400.0, Partial:   611.33, Net: a.one_second_counter\[13\], Pin: _139_/B, Layer: met1
+Partial/Required:  1.07, Required:    400.0, Partial:   429.89, Net: _043_, Pin: _181_/B1_N, Layer: met1
+Partial/Required:  1.01, Required:    400.0, Partial:   402.75, Net: a.count\[3\], Pin: _159_/A, Layer: met1
+Partial/Required:  1.00, Required:    400.0, Partial:   401.33, Net: _031_, Pin: _154_/B, Layer: met1
